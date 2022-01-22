@@ -22,7 +22,7 @@ const questions = [
   {
     type: 'input',
     name: 'description',
-    message: 'Please add a description for the project'
+    message: 'Please add a description for the project',
   },
   // Add Description of usage
   {
@@ -30,7 +30,6 @@ const questions = [
     name: 'usage',
     message: 'Please describe the usage of the project'
   },
-  /*
   // Add Image(s)
   {
     type: 'confirm',
@@ -40,10 +39,15 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'imagePath',
-    message: 'Please enter the path to the image you would like to add',
+    name: 'imageAlt',
+    message: 'Please enter a short alt text for the image'
+  },
+  {
+    type: 'input',
+    name: 'imageName',
+    message: 'Please add the image to the assets/images folder of this repository and type the image name and file ending',
     when: ({ confirmImage }) => confirmImage
-  }, */
+  },
   // Add Credits
   {
     type: 'confirm',
@@ -68,8 +72,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'What license(s) does your project have?',
-    choices: ['MIT','Apache 2.0','GPL 3.0','BSD 3','None']
-  },
+    choices: ['MIT','AGPL v3','GPL v3','Mozilla Public License 2.0','The Unlicensed', 'Not Licensed']  },
   {
     type: 'input',
     name: 'contribution',
@@ -113,7 +116,8 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions)
     .then(function(data) {
-      writeToFile('generatedReadme.md', generateMarkdown(data))
+    console.log(data);
+      writeToFile('generatedReadme.md', generateMarkdown(data));
     });
 };
 
