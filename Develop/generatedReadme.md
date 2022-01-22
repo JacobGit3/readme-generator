@@ -1,6 +1,6 @@
 
-  # asd
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  # test
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
   ## Table of Contents:
 
@@ -15,45 +15,47 @@
   ## Description
 
   ---
-  asd
+  test
 
   ## Installation:
 
   ---
   To install all necessary dependencies for this program,
   open the console and run the following command:  
-  ```sda```
+  ```npm i```
 
   ## Usage
 
   ---
-  asd
+  test
   ![test](assets/images/test.png)
 
   ## Credits
 
   ---
-  ### Collaborators:
-  Name: undefined  
-  Github: undefined  
+  
+    ### Collaborators:
+    Name: ward
+    Github: https://github.com/Valaar
+    
 
   ### Third Party Assets:
-  ad
+  node.js
   
   ### Third Party Docs / Contribution:
-  asd
+  www.google.com
 
   ## Tests
 
   ---
   To test this application run this command in the console:  
-  ```asd```
+  ```node index```
 
   ## Questions
 
   ---
   For any questions feel free to reach out through the following contacts:  
 
-  Email: ad  
-  Github: https://github.com/asd  
+  Email: a@a  
+  Github: https://github.com/jacobGit3  
   

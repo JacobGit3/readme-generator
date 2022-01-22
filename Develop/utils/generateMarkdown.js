@@ -1,36 +1,48 @@
 // Generate license badge and link, if not licensed return nothing
 function genLicense(license) {
   let badge = '';
-  if (license = 'MIT') {
+  if (license === 'MIT') {
     badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';    
     return badge;
-  }else if (license = 'AGPL v3') {
+  }else if (license === 'AGPL v3') {
     badge = '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)';
     return badge;
-  }else if (license = 'GPL v3') {
+  }else if (license === 'GPL v3') {
     badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
     return badge;
-  }else if (license = 'Mozilla Public License 2.0') {
+  }else if (license === 'Mozilla Public License 2.0') {
     badge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
     return badge;
-  }else if (license = 'Unlicense') {
+  }else if (license === 'Unlicense') {
     badge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
     return badge;
   }else {
-    return;
+    return('This project is not licensed');
   }
 }
 
 // Generate image with alt text if image is provided
 function genImage(image, alt, name) {
   if (image == true) {
-    imgLink = `![${alt}](assets/images/${name})`;
-    return imgLink;
+    return (`![${alt}](assets/images/${name})`);
   }else {
-    imgLink = '';
-    return imgLink;
+    return('');
   }
 }
+
+// Add credits if there are credits
+function genCredits(credit, name, github) {
+  if (credit){
+    let collab = `
+    Collaborators:
+    Name: ${name}
+    Github: https://github.com/${github}
+    `;
+    return collab;
+  }else {
+    return('There are no additional people who have contributed to this project.')
+  }
+} 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -69,9 +81,7 @@ function generateMarkdown(data) {
   ## Credits
 
   ---
-  ### Collaborators:
-  Name: ${data.creditName}  
-  Github: ${data.creditGithub}  
+  ${genCredits(data.confirmCredit, data.creditName, data.creditGithub)}
 
   ### Third Party Assets:
   ${data.assets}
