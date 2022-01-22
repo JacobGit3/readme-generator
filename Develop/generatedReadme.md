@@ -28,7 +28,7 @@
 
   ---
   The usage of this project is to create a proper formatted readme file for any project needed, it will speed up the readme writing in future projects and keep readme files consistent across my github account
-  ![this is an image of the program running in console](./Develop/assets/images/test.png)
+  ![this is an image of the program running in console](assets/images/test.png)
 
   ## Credits
 
