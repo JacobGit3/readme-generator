@@ -1,6 +1,6 @@
 
-  # test
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  # Read Me Generator
+  This project is not licensed
 
   ## Table of Contents:
 
@@ -15,7 +15,7 @@
   ## Description
 
   ---
-  test
+  This project will generate a readme file using node.js with inquire to prompt the user with questions and the input will be added to the generated file in its associated place
 
   ## Installation:
 
@@ -27,23 +27,19 @@
   ## Usage
 
   ---
-  test
-  ![test](assets/images/test.png)
+  The usage of this project is to create a proper formatted readme file for any project needed, it will speed up the readme writing in future projects and keep readme files consistent across my github account
+  ![this is an image of the program running in console](assets/images/test.png)
 
   ## Credits
 
   ---
-  
-    ### Collaborators:
-    Name: ward
-    Github: https://github.com/Valaar
-    
+  There are no additional people who have contributed to this project.
 
   ### Third Party Assets:
-  node.js
+  node.js and related docs 
   
   ### Third Party Docs / Contribution:
-  www.google.com
+  no contribution
 
   ## Tests
 
@@ -56,6 +52,6 @@
   ---
   For any questions feel free to reach out through the following contacts:  
 
-  Email: a@a  
+  Email: jacob.tobin.liberty@gmail.com  
   Github: https://github.com/jacobGit3  
   
